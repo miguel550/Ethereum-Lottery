@@ -19,7 +19,7 @@ Proposal for smart contract lottery on the ethereum blockchain
 - The following eight blocks are mined.
 
 | Block       | Hash          | Result  |
-| ----------- |:-------------:| -----:|
+| ----------- |:-------------:| -----|
 | 1493067     | 0x2b1df7dc646c5aecac48065b2fb115def2629f8fdc9d11eadc94180f67a7406a | 0 |
 | 1493068     | 0x6c94f1dbbde8af5a8335f64e9bf11ad173269cddcbd663d8d415787d54e5b372 |   0 |
 | 1493069 | 0xf0c44a4910151658f04210fe569b202171dcce19e74f1ad1ba0c2cbe38fe55ea |    0 |
@@ -34,6 +34,9 @@ Proposal for smart contract lottery on the ethereum blockchain
 - The winning string for this lottery would be `00000101`. Any player that submitted this string during the previous 360 block buy phase would be entitled to an equal share of winnings.
 
 ### Caveats
+- When the lottery pool reaches greater than [~12.5 ETH](https://github.com/jack-fraser/Ethereum-Lottery/issues/1) miners might have enough incentive to try and change the outcome of the lottery in their favor.
 
-- This proposal introduces an incentive for miners to quietly 51% attack the network to win the lottery. This particular risk could be exacerbated with a PoS system. 
+### Vulnerabilities
+
+- Miner's with 51% control of the network could guarentee that they would win the lotto drawing.
 - [An attacker need not control every block mined to unfairly increase their chance at winning the lottery.](https://gist.github.com/alexvandesande/259b4ffb581493ec0a1c#gistcomment-1689689)
