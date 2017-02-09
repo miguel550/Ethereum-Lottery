@@ -40,3 +40,4 @@ Proposal for smart contract lottery on the ethereum blockchain
 
 - Miner's with 51% control of the network could guarentee that they would win the lotto drawing.
 - [An attacker need not control every block mined to unfairly increase their chance at winning the lottery.](https://gist.github.com/alexvandesande/259b4ffb581493ec0a1c#gistcomment-1689689)
+- [An attacker can still submit the blocks that are correct (but would cause the miner to lose) as orphans and recieve a lesser reward](https://github.com/Bunjin/Rouleth/blob/master/Provably_Fair_No_Cheating.md)
